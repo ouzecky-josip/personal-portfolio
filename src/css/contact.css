@@ -1,0 +1,106 @@
+/* || CONTACT */
+.get-in-touch {
+  padding: 3.2rem 0;
+}
+
+.get-in-touch__heading {
+  margin-bottom: 2.4rem;
+}
+
+.get-in-touch__text {
+  margin-bottom: 2.4rem;
+  max-width: 65ch;
+}
+
+.get-in-touch__socials {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.get-in-touch__social path {
+  transition: all 300ms ease-in-out;
+}
+
+.get-in-touch__social:hover path {
+  fill: var(--COLOR-GREEN);
+}
+
+.contact-me {
+  padding: 3.2rem 0;
+  margin-bottom: 4.8rem;
+}
+
+.contact-me__heading {
+  margin-bottom: 2.4rem;
+}
+
+.contact-me__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  max-width: 65ch;
+}
+
+.contact-me__form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contact-me__form-label {
+  color: var(--COLOR-GRAY);
+}
+
+.contact-me__form-input,
+.contact-me__form-textarea {
+  width: 100%;
+  padding: 0.9rem 1.6rem;
+  background-color: var(--COLOR-DARK-GRAY);
+  border: 1px solid var(--COLOR-DARK-GRAY);
+  color: var(--COLOR-WHITE);
+  transition: all 300ms ease-in-out;
+}
+
+.contact-me__form-input::placeholder,
+.contact-me__form-textarea::placeholder {
+  color: var(--COLOR-GRAY);
+}
+
+.contact-me__form-input:hover,
+.contact-me__form-textarea:hover,
+.contact-me__form-input:focus,
+.contact-me__form-textarea:focus {
+  border: 1px solid var(--COLOR-WHITE);
+}
+
+.contact-me__form-textarea {
+  min-height: 10rem;
+}
+
+.contact-me__btn-submit {
+  align-self: flex-start;
+}
+
+/* || TABLER */
+@media screen and (min-width: 768px) {
+  .get-in-touch,
+  .contact-me {
+    padding: 4.8rem 0;
+  }
+
+  .contact-me {
+    margin-bottom: 6.4rem;
+  }
+}
+
+/* || DESKTOP */
+@media screen and (min-width: 1280px) {
+  .get-in-touch,
+  .contact-me {
+    display: grid;
+    grid-template-columns: 35rem 1fr;
+    gap: 12.8rem;
+    padding: 4.8rem 0;
+  }
+}

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Josip Oužecky" />
+    <meta
+      name="description"
+      content="Professional web developer offering custom website design, responsive development, and cutting-edge solutions for businesses and individuals. Bring your ideas to life with fast, reliable, and user-friendly websites tailored to your needs."
+    />
+    <title>Josip Oužecky</title>
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- AOS LIBRARY -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <h1 class="sr-only">Josip Oužecky</h1>
+
+    <header class="header">
+      <div class="container header__content">
+        <a href="./index.html">
+          <svg
+            data-aos="fade-right"
+            data-aos-duration="700"
+            width="61"
+            height="32"
+            viewBox="0 0 61 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M31.3469 26.1224L15.6735 0L0 26.1224H31.3469ZM60.0816 5.87755L44.4082 32L28.7347 5.87755H60.0816Z"
+              fill="#4EE1A0"
+            />
+          </svg>
+        </a>
+
+        <nav class="navigation">
+          <h2 class="sr-only">Main Navigation</h2>
+          <div
+            class="hamburger"
+            id="hamburger-menu"
+            data-aos="fade-left"
+            data-aos-duration="700"
+          >
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+          <ul class="navigation__list list-none" id="navigation-list">
+            <li data-aos="fade-left" data-aos-duration="700">
+              <a class="link-effect active" href="/">Home</a>
+            </li>
+            <li
+              data-aos="fade-left"
+              data-aos-duration="700"
+              data-aos-delay="200"
+            >
+              <a class="link-effect" href="portfolio/index.html">Portfolio</a>
+            </li>
+            <li
+              data-aos="fade-left"
+              data-aos-duration="700"
+              data-aos-delay="400"
+            >
+              <a class="link-effect" href="contact/index.html">Contact me</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__wrapper">
+          <img
+            data-aos="fade-up"
+            data-aos-duration="700"
+            class="hero__img"
+            src="assets/img/josip-ouzecky.jpg"
+            alt="Josip Oužecky"
+            title="Josip Oužecky"
+            width="448"
+            height="448"
+          />
+
+          <div class="hero__content" data-aos="fade-up" data-aos-duration="700">
+            <h1 class="heading-xl hero__heading">
+              Nice to meet you! I'm
+              <span class="hero__name">Josip Oužecky </span>
+            </h1>
+            <p data-aos="fade-up">
+              Based in the Croatia, I’m a web developer passionate about
+              building accessible web apps that users love.
+            </p>
+            <a href="#about-me" class="btn btn-effect">
+              <svg
+                width="18"
+                height="14"
+                viewBox="0 0 18 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="Group 3">
+                  <path id="Path 6" d="M1 9L9 13L17 9" stroke="#4EE1A0" />
+                  <path
+                    id="Path 6 Copy"
+                    opacity="0.5"
+                    d="M1 5L9 9L17 5"
+                    stroke="#4EE1A0"
+                  />
+                  <path
+                    id="Path 6 Copy 2"
+                    opacity="0.25"
+                    d="M1 1L9 5L17 1"
+                    stroke="#4EE1A0"
+                  />
+                </g>
+              </svg>
+              About Me
+            </a>
+          </div>
+        </div>
+
+        <svg
+          class="hero__img--decoration"
+          width="291"
+          height="129"
+          viewBox="0 0 291 129"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g opacity="0.25">
+            <path
+              d="M529.5 40C529.5 42.5213 527.806 45.0875 524.319 47.659C520.846 50.2209 515.692 52.713 509.007 55.0989C495.642 59.8685 476.275 64.1724 452.309 67.7899C404.385 75.0237 338.161 79.5 265 79.5C191.839 79.5 125.615 75.0237 77.6913 67.7899C53.7254 64.1724 34.3581 59.8685 20.9931 55.0989C14.3075 52.713 9.15368 50.2209 5.68067 47.659C2.19447 45.0875 0.5 42.5213 0.5 40C0.5 37.4787 2.19447 34.9125 5.68067 32.341C9.15368 29.7791 14.3075 27.287 20.9931 24.9011C34.3581 20.1315 53.7254 15.8276 77.6913 12.2101C125.615 4.97631 191.839 0.5 265 0.5C338.161 0.5 404.385 4.97631 452.309 12.2101C476.275 15.8276 495.642 20.1315 509.007 24.9011C515.692 27.287 520.846 29.7791 524.319 32.341C527.806 34.9125 529.5 37.4787 529.5 40Z"
+              stroke="white"
+            />
+            <path
+              d="M529.5 52C529.5 54.5213 527.806 57.0875 524.319 59.659C520.846 62.2209 515.692 64.713 509.007 67.0989C495.642 71.8685 476.275 76.1724 452.309 79.7899C404.385 87.0237 338.161 91.5 265 91.5C191.839 91.5 125.615 87.0237 77.6913 79.7899C53.7254 76.1724 34.3581 71.8685 20.9931 67.0989C14.3075 64.713 9.15368 62.2209 5.68067 59.659C2.19447 57.0875 0.5 54.5213 0.5 52C0.5 49.4787 2.19447 46.9125 5.68067 44.341C9.15368 41.7791 14.3075 39.287 20.9931 36.9011C34.3581 32.1315 53.7254 27.8276 77.6913 24.2101C125.615 16.9763 191.839 12.5 265 12.5C338.161 12.5 404.385 16.9763 452.309 24.2101C476.275 27.8276 495.642 32.1315 509.007 36.9011C515.692 39.287 520.846 41.7791 524.319 44.341C527.806 46.9125 529.5 49.4787 529.5 52Z"
+              stroke="white"
+            />
+            <path
+              d="M529.5 65C529.5 67.5213 527.806 70.0875 524.319 72.659C520.846 75.2209 515.692 77.713 509.007 80.0989C495.642 84.8685 476.275 89.1724 452.309 92.7899C404.385 100.024 338.161 104.5 265 104.5C191.839 104.5 125.615 100.024 77.6913 92.7899C53.7254 89.1724 34.3581 84.8685 20.9931 80.0989C14.3075 77.713 9.15368 75.2209 5.68067 72.659C2.19447 70.0875 0.5 67.5213 0.5 65C0.5 62.4787 2.19447 59.9125 5.68067 57.341C9.15368 54.7791 14.3075 52.287 20.9931 49.9011C34.3581 45.1315 53.7254 40.8276 77.6913 37.2101C125.615 29.9763 191.839 25.5 265 25.5C338.161 25.5 404.385 29.9763 452.309 37.2101C476.275 40.8276 495.642 45.1315 509.007 49.9011C515.692 52.287 520.846 54.7791 524.319 57.341C527.806 59.9125 529.5 62.4787 529.5 65Z"
+              stroke="white"
+            />
+            <path
+              d="M529.5 77C529.5 79.5213 527.806 82.0875 524.319 84.659C520.846 87.2209 515.692 89.713 509.007 92.0989C495.642 96.8685 476.275 101.172 452.309 104.79C404.385 112.024 338.161 116.5 265 116.5C191.839 116.5 125.615 112.024 77.6913 104.79C53.7254 101.172 34.3581 96.8685 20.9931 92.0989C14.3075 89.713 9.15368 87.2209 5.68067 84.659C2.19447 82.0875 0.5 79.5213 0.5 77C0.5 74.4787 2.19447 71.9125 5.68067 69.341C9.15368 66.7791 14.3075 64.287 20.9931 61.9011C34.3581 57.1315 53.7254 52.8276 77.6913 49.2101C125.615 41.9763 191.839 37.5 265 37.5C338.161 37.5 404.385 41.9763 452.309 49.2101C476.275 52.8276 495.642 57.1315 509.007 61.9011C515.692 64.287 520.846 66.7791 524.319 69.341C527.806 71.9125 529.5 74.4787 529.5 77Z"
+              stroke="white"
+            />
+            <path
+              d="M529.5 89C529.5 91.5213 527.806 94.0875 524.319 96.659C520.846 99.2209 515.692 101.713 509.007 104.099C495.642 108.868 476.275 113.172 452.309 116.79C404.385 124.024 338.161 128.5 265 128.5C191.839 128.5 125.615 124.024 77.6913 116.79C53.7254 113.172 34.3581 108.868 20.9931 104.099C14.3075 101.713 9.15368 99.2209 5.68067 96.659C2.19447 94.0875 0.5 91.5213 0.5 89C0.5 86.4787 2.19447 83.9125 5.68067 81.341C9.15368 78.7791 14.3075 76.287 20.9931 73.9011C34.3581 69.1315 53.7254 64.8276 77.6913 61.2101C125.615 53.9763 191.839 49.5 265 49.5C338.161 49.5 404.385 53.9763 452.309 61.2101C476.275 64.8276 495.642 69.1315 509.007 73.9011C515.692 76.287 520.846 78.7791 524.319 81.341C527.806 83.9125 529.5 86.4787 529.5 89Z"
+              stroke="white"
+            />
+          </g>
+        </svg>
+      </section>
+
+      <div class="container" data-aos="zoom-in" data-aos-duration="700">
+        <hr />
+      </div>
+
+      <section class="skills">
+        <h2 class="sr-only">Skills</h2>
+        <div class="container">
+          <ul class="skills__List list-none">
+            <li class="skills__item" data-aos="fade-up" data-aos-duration="700">
+              <p class="heading-l">HTML</p>
+              <p class="skills__description">5 Years Experience</p>
+            </li>
+            <li class="skills__item" data-aos="fade-up" data-aos-duration="700">
+              <p class="heading-l">CSS</p>
+              <p class="skills__description">5 Years Experience</p>
+            </li>
+            <li class="skills__item" data-aos="fade-up" data-aos-duration="700">
+              <p class="heading-l">Javascript</p>
+              <p class="skills__description">5 Years Experience</p>
+            </li>
+            <li class="skills__item" data-aos="fade-up" data-aos-duration="700">
+              <p class="heading-l">Git</p>
+              <p class="skills__description">5 Years Experience</p>
+            </li>
+            <li class="skills__item" data-aos="fade-up" data-aos-duration="700">
+              <p class="heading-l">Magento 2</p>
+              <p class="skills__description">
+                4 Years Experience ( jQuery, Knockout.js )
+              </p>
+            </li>
+            <li class="skills__item" data-aos="fade-up" data-aos-duration="700">
+              <p class="heading-l">Hyvä Themes</p>
+              <p class="skills__description">
+                2 Years Experience ( TailwindCSS, Alpine.js )
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="container" data-aos="zoom-in" data-aos-duration="700">
+        <hr />
+      </div>
+
+      <section id="about-me" class="about">
+        <div class="container">
+          <h2
+            class="heading-xl about__heading"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            About Me
+          </h2>
+
+          <div class="about__content">
+            <div
+              class="about__img-wrapper"
+              data-aos="fade-up"
+              data-aos-duration="700"
+            >
+              <img
+                class="about__img"
+                src="assets/img/josip-ouzecky-2.jpg"
+                alt="Josip Oužecky"
+                title="Josip Oužecky"
+                width="448"
+                height="448"
+                loading="lazy"
+              />
+
+              <svg
+                class="about__decoration"
+                width="129"
+                height="129"
+                viewBox="0 0 129 129"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle id="Oval" cx="64.5" cy="64.5" r="64" stroke="white" />
+              </svg>
+            </div>
+
+            <div class="about__text" data-aos="fade-up" data-aos-duration="700">
+              <p>
+                I am 26 years old and have a degree in Electrical Engineering
+                with a major in Informatics from Osijek, earning the title of
+                Computer Engineer.
+              </p>
+
+              <p>
+                I am currently working at
+                <a target="_blank" href="https://inchoo.net/" class="text-link"
+                  >Inchoo</a
+                >
+                as a Frontend Developer and also serve as the Team Leader of the
+                frontend development team. My main job is to ensure that
+                eCommerce websites look as great as they do in the design,
+                adding the final touches with smooth animations and a great user
+                experience.
+              </p>
+
+              <p>
+                I love spending time doing sports, both outdoors and indoors,
+                but what I enjoy the most is learning new technologies.
+                Everything is changing fast, And I love the challenge of
+                acquiring new technologies.
+              </p>
+
+              <p>
+                My motto is:
+                <q class="about__moto">
+                  Comfort is the enemy of growth—if you're too comfortable, it's
+                  time for a change'
+                </q>
+              </p>
+
+              <a href="portfolio/index.html" class="btn btn-effect about__btn">
+                GO TO PORTFOLIO
+                <svg
+                  width="18"
+                  height="14"
+                  viewBox="0 0 18 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="Group 3">
+                    <path id="Path 6" d="M1 9L9 13L17 9" stroke="#4EE1A0" />
+                    <path
+                      id="Path 6 Copy"
+                      opacity="0.5"
+                      d="M1 5L9 9L17 5"
+                      stroke="#4EE1A0"
+                    />
+                    <path
+                      id="Path 6 Copy 2"
+                      opacity="0.25"
+                      d="M1 1L9 5L17 1"
+                      stroke="#4EE1A0"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div
+          class="container contact_wrapper"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
+          <h2 class="heading-l">Interested in doing a project together?</h2>
+          <div class="contact__decoration"></div>
+          <a href="contact/index.html" class="btn btn-effect contact__btn">
+            CONTACT ME
+            <svg
+              width="18"
+              height="14"
+              viewBox="0 0 18 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="Group 3">
+                <path id="Path 6" d="M1 9L9 13L17 9" stroke="#4EE1A0" />
+                <path
+                  id="Path 6 Copy"
+                  opacity="0.5"
+                  d="M1 5L9 9L17 5"
+                  stroke="#4EE1A0"
+                />
+                <path
+                  id="Path 6 Copy 2"
+                  opacity="0.25"
+                  d="M1 1L9 5L17 1"
+                  stroke="#4EE1A0"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <svg
+          width="61"
+          height="32"
+          viewBox="0 0 61 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M31.3469 26.1224L15.6735 0L0 26.1224H31.3469ZM60.0816 5.87755L44.4082 32L28.7347 5.87755H60.0816Z"
+            fill="#4EE1A0"
+          />
+        </svg>
+
+        <ul class="footer__links list-none">
+          <li><a class="footer__link link-effect active" href="/">Home</a></li>
+          <li>
+            <a class="footer__link link-effect" href="portfolio/index.html"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a class="footer__link link-effect" href="contact/index.html"
+              >Contact me</a
+            >
+          </li>
+        </ul>
+
+        <ul class="footer__socials list-none">
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/ouzecky-josip"
+              class="footer__social"
+              title="GitHub Profile"
+            >
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.3035 0C5.50583 0 0 5.50583 0 12.3035C0 17.7478 3.52188 22.3463 8.41254 23.9765C9.02771 24.0842 9.2584 23.715 9.2584 23.3921C9.2584 23.0999 9.24302 22.131 9.24302 21.1005C6.15176 21.6696 5.35203 20.347 5.10596 19.6549C4.96755 19.3012 4.36775 18.2092 3.84485 17.917C3.41423 17.6863 2.79905 17.1173 3.82947 17.1019C4.79838 17.0865 5.49045 17.9939 5.72114 18.363C6.82846 20.2239 8.59709 19.701 9.30454 19.3781C9.4122 18.5783 9.73516 18.04 10.0889 17.7325C7.35136 17.4249 4.49079 16.3637 4.49079 11.6576C4.49079 10.3196 4.96755 9.21227 5.7519 8.35102C5.62886 8.04343 5.19824 6.78232 5.87493 5.09058C5.87493 5.09058 6.90535 4.76762 9.2584 6.3517C10.2427 6.07487 11.2885 5.93645 12.3343 5.93645C13.3801 5.93645 14.4259 6.07487 15.4102 6.3517C17.7632 4.75224 18.7936 5.09058 18.7936 5.09058C19.4703 6.78232 19.0397 8.04343 18.9167 8.35102C19.701 9.21227 20.1778 10.3042 20.1778 11.6576C20.1778 16.3791 17.3018 17.4249 14.5643 17.7325C15.0103 18.1169 15.3948 18.8552 15.3948 20.0086C15.3948 21.6542 15.3794 22.9768 15.3794 23.3921C15.3794 23.715 15.6101 24.0995 16.2253 23.9765C18.6676 23.1519 20.79 21.5821 22.2936 19.4882C23.7972 17.3941 24.6063 14.8814 24.6071 12.3035C24.6071 5.50583 19.1012 0 12.3035 0Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/zegac/"
+              class="footer__social"
+              title="LinkedIn Profile"
+            >
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.5513 3.3042C4.41165 3.3042 3.48447 4.23017 3.48447 5.36833C3.48447 6.50724 4.41165 7.4338 5.5513 7.4338C6.68872 7.4338 7.61408 6.50724 7.61408 5.36833C7.61408 4.23017 6.68872 3.3042 5.5513 3.3042ZM3.76655 8.99818V20.4515H7.32916L7.33051 8.99818H3.76655ZM9.56465 8.99713V20.4503L13.1192 20.4517L13.1206 14.7845C13.1206 13.3298 13.3739 11.8429 15.2535 11.8429C17.1044 11.8429 17.1044 13.5976 17.1044 14.879V20.4503L20.6629 20.449V14.1689C20.6629 11.3348 20.1456 8.71224 16.3929 8.71224C14.6304 8.71224 13.4769 9.70851 13.0247 10.5618H12.9747L12.9747 8.99713H9.56465ZM22.4355 24H1.98187C1.00598 24 0.212036 23.223 0.212036 22.268V1.73068C0.212036 0.776376 1.00598 0 1.98187 0H22.4355C23.4151 0 24.212 0.776376 24.212 1.73068V22.268C24.212 23.223 23.4151 24 22.4355 24Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://x.com/JosipOuecky"
+              class="footer__social"
+              title="Twitter Profile"
+            >
+              <svg
+                width="25"
+                height="23"
+                viewBox="0 0 25 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.6875 0.171875H23.5219L15.1469 9.76875L25 22.8281H17.2859L11.2438 14.9063L4.32969 22.8281H0.49375L9.45156 12.5625L0 0.171875H7.91094L13.3719 7.41094L19.6875 0.171875ZM18.3437 20.5281H20.4688L6.75469 2.35156H4.47656L18.3437 20.5281Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
