@@ -15,7 +15,10 @@ hamburgerMenu.addEventListener("click", () => {
 
 /* || CONTACT FORM */
 const contactForm = document.getElementById("contact-form");
-contactForm.addEventListener("submit", handleSubmit);
+
+if (contactForm) {
+  contactForm.addEventListener("submit", handleSubmit);
+}
 
 async function handleSubmit(event) {
   event.preventDefault();
