@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-## [Check my website online](https://www.example.com)
+## [Check my website online](https://www.josipouzecky.dev/)
 
 ![Personal Portfolio](./src/assets/img/personal-portfolio.jpg)
 
