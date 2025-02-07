@@ -202,15 +202,23 @@
         </h2>
 
         <form
+          id="contact-form"
           class="contact-me__form"
-          action="#"
+          action="https://formspree.io/f/xovjlwbl"
           method="POST"
           data-aos="fade-up"
           data-aos-duration="700"
         >
+          <p id="contact-form-status" class="contact-me__status"></p>
           <p class="contact-me__form-group">
-            <label class="contact-me__form-label" for="name">Name</label>
+            <label class="contact-me__form-label" for="name">
+              Name
+              <span class="required"> *</span>
+            </label>
             <input
+              required
+              name="name"
+              id="name"
               class="contact-me__form-input"
               type="text"
               placeholder="Enter your name"
@@ -218,10 +226,14 @@
           </p>
 
           <p class="contact-me__form-group">
-            <label class="contact-me__form-label" for="name"
-              >Email Address</label
-            >
+            <label class="contact-me__form-label" for="email">
+              Email Address
+              <span class="required"> *</span>
+            </label>
             <input
+              required
+              name="email"
+              id="email"
               class="contact-me__form-input"
               type="text"
               placeholder="email@example.com"
@@ -229,16 +241,29 @@
           </p>
 
           <p class="contact-me__form-group">
-            <label class="contact-me__form-label" for="name">Name</label>
+            <label class="contact-me__form-label" for="message">
+              Message
+              <span class="required"> *</span>
+            </label>
             <textarea
+              required
+              name="message"
+              id="message"
               class="contact-me__form-textarea"
               placeholder="How can i help?"
             ></textarea>
           </p>
-          <button class="btn btn-effect contact-me__btn-submit">
+          <button
+            class="btn btn-effect contact-me__btn-submit"
+            id="contact-form-submit-btn"
+          >
             Send Message
           </button>
         </form>
+
+        <div id="contact-form-loader" class="loader">
+          <span class="loader__element"></span>
+        </div>
       </section>
     </main>
 

@@ -82,6 +82,24 @@
   align-self: flex-start;
 }
 
+.contact-me__status {
+  padding: 0.9rem 1.6rem;
+  background: var(--COLOR-DARK-GRAY);
+  display: none;
+}
+
+.contact-me__status.error {
+  color: var(--COLOR-RED);
+  border: 1px solid var(--COLOR-RED);
+  display: block;
+}
+
+.contact-me__status.success {
+  color: var(--COLOR-GREEN);
+  border: 1px solid var(--COLOR-GREEN);
+  display: block;
+}
+
 /* || TABLER */
 @media screen and (min-width: 768px) {
   .get-in-touch,

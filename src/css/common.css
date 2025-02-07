@@ -43,6 +43,7 @@ button {
   --COLOR-GRAY: #d9d9d9;
   --COLOR-GREEN: #4ee1a0;
   --COLOR-WHITE: #fff;
+  --COLOR-RED: #ff6f5b;
 }
 
 /* || BASIC STYLES */
@@ -139,7 +140,13 @@ button:hover {
   left: -9999px;
 }
 
+.required {
+  color: var(--COLOR-RED);
+}
+
 /* || COMPONENTS */
+
+/* Button */
 .btn,
 a.btn {
   background-color: transparent;
@@ -172,6 +179,7 @@ a.btn {
   text-shadow: 1px 1px 2px var(--COLOR-GREEN);
 }
 
+/* Link */
 .link-effect {
   transition: color 0.2s;
 }
@@ -209,6 +217,99 @@ a.btn {
 .link-effect:focus::after {
   opacity: 1;
   transform: translateX(0px);
+}
+
+/* Loader */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.loader.active {
+  display: flex;
+}
+
+.loader__element {
+  transform: rotateZ(45deg);
+  perspective: 1000px;
+  border-radius: 50%;
+  width: 12.8rem;
+  height: 12.8rem;
+  color: var(--COLOR-WHITE);
+}
+
+.loader__element:before,
+.loader__element:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  transform: rotateX(70deg);
+  animation: 1s spin linear infinite;
+}
+
+.loader__element:after {
+  color: var(--COLOR-GREEN);
+  transform: rotateY(70deg);
+  animation-delay: 0.4s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateZ(360deg);
+  }
+}
+
+@keyframes rotateccw {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    box-shadow: 0.2em 0px 0 0px currentcolor;
+  }
+  12% {
+    box-shadow: 0.2em 0.2em 0 0 currentcolor;
+  }
+  25% {
+    box-shadow: 0 0.2em 0 0px currentcolor;
+  }
+  37% {
+    box-shadow: -0.2em 0.2em 0 0 currentcolor;
+  }
+  50% {
+    box-shadow: -0.2em 0 0 0 currentcolor;
+  }
+  62% {
+    box-shadow: -0.2em -0.2em 0 0 currentcolor;
+  }
+  75% {
+    box-shadow: 0px -0.2em 0 0 currentcolor;
+  }
+  87% {
+    box-shadow: 0.2em -0.2em 0 0 currentcolor;
+  }
 }
 
 /* || HEADER */
