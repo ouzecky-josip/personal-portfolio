@@ -47,6 +47,11 @@ button {
 }
 
 /* || BASIC STYLES */
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
   background: var(--COLOR-BLACK);
@@ -62,7 +67,6 @@ body {
   display: flex;
   flex-flow: column nowrap;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 main {
