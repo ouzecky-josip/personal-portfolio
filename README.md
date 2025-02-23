@@ -1,22 +1,45 @@
-# Personal Portfolio
+# Personal Portfolio Website
 
-## [Check my website online](https://www.josipouzecky.dev/)
+[![Portfolio Preview](./src/assets/img/personal-portfolio.webp)](https://www.josipouzecky.dev/)
 
-![Personal Portfolio](./src/assets/img/personal-portfolio.webp)
+Welcome to my personal portfolio website repository! Visit the live site at [josipouzecky.dev](https://www.josipouzecky.dev/)
 
-## Setting Up Locally
+## About This Project
+This is my personal portfolio website where you can:
+- Learn more about who I am
+- Explore my projects
+- View my skills and experience
+- Get in touch with me
 
-1. Download or clone the repository.
-2. Run `npm install` (ensure that Node.js and npm are installed).
-3. Check `package.json` for available scripts. You have two options:
-   - `npm run start `for development
-   - `npm run build `for production
-4. Enjoy! 😃
+## Local Development Setup
+To run this project locally, follow these steps:
+1. Clone the repository `git clone [repository-url]`
+2. Install dependencies `npm install`
+3. Run the development server `npm run start`
+4. For production build `npm run build`
 
-## Purpose of This Repository
+## Tech Stack
+This project is built with:
+- HTML
+- CSS
 
-The main purpose of this repository is to create my personal website, where I can present myself to others.
+While it's a simple tech stack for now, it serves as the foundation for my web development journey. I chose to start with the basics to ensure a solid understanding of core web technologies.
 
-Another important reason for this project is that I didn’t have any side projects before, but I wanted to start working on something in my free time to acquire new skills and showcase them to the world. This project is my first step in demonstrating what I know. It’s a simple and raw HTML and CSS setup for now, but it’s just the beginning!
+## Project Background
+This portfolio marks the beginning of my web development journey in 2025. Previously, I hadn't dedicated time to personal projects, but I've made the decision to change that. This website represents my first step into building a public portfolio of work.
 
-So, in short, in 2025, I decided to start my own journey—learning the skills I enjoy and want to use, all while having fun along the way! ❤️
+Why start with just HTML and CSS? Because mastering the fundamentals is crucial. As I continue learning and growing, this portfolio will evolve to incorporate more advanced technologies and showcase new projects.
+
+## Future Plans
+This is just the beginning! I plan to:
+- Add more projects
+- Implement new features
+- Explore and integrate modern web technologies
+- Continue learning and improving
+
+## Get in Touch
+Feel free to reach out if you'd like to connect or collaborate!
+
+---
+
+Built with ❤️ by Josip Oužecky
