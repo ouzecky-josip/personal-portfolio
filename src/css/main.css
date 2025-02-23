@@ -1,5 +1,10 @@
-@import url("vendor/aos.css");
-@import url("common.css");
-@import url("home.css");
-@import url("contact.css");
-@import url("portfolio.css");
+/* BASE */
+@import url("base/common.css");
+
+/* PAGES */
+@import url("pages/home.css");
+@import url("pages/portfolio.css");
+@import url("pages/contact.css");
+
+/* VENDORS */
+@import url("vendors/aos.css");
