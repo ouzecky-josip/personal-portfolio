@@ -1,18 +1,18 @@
 /* || TYPOGRAPHY */
 @font-face {
   font-display: swap;
-  font-family: "Space Grotesk";
+  font-family: 'Space Grotesk';
   font-style: normal;
   font-weight: 500;
-  src: url("../../assets/fonts/space-grotesk-medium-500.woff2") format("woff2");
+  src: url('../../assets/fonts/space-grotesk-medium-500.woff2') format('woff2');
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Space Grotesk";
+  font-family: 'Space Grotesk';
   font-style: normal;
   font-weight: 700;
-  src: url("../../assets/fonts/space-grotesk-bold-700.woff2") format("woff2");
+  src: url('../../assets/fonts/space-grotesk-bold-700.woff2') format('woff2');
 }
 
 /* || DEFAULT RESET */
@@ -60,7 +60,7 @@ html {
 }
 
 body {
-  font-family: "Space Grotesk", serif;
+  font-family: 'Space Grotesk', serif;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -79,7 +79,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Space Grotesk", serif;
+  font-family: 'Space Grotesk', serif;
   font-weight: 700;
 }
 
@@ -176,8 +176,7 @@ a.btn {
 
 .btn-effect:hover {
   border: 1px solid;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.33),
-    0 0 20px rgba(255, 255, 255, 0.33);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.33), 0 0 20px rgba(255, 255, 255, 0.33);
   outline-color: rgba(255, 255, 255, 0);
   outline-offset: 15px;
   text-shadow: 1px 1px 2px var(--COLOR-GREEN);
@@ -203,13 +202,13 @@ a.btn {
 
 .link-effect::before {
   margin-right: 1rem;
-  content: "[";
+  content: '[';
   transform: translateX(2rem);
 }
 
 .link-effect::after {
   margin-left: 1rem;
-  content: "]";
+  content: ']';
   transform: translateX(-2rem);
 }
 
@@ -252,7 +251,7 @@ a.btn {
 
 .loader__element:before,
 .loader__element:after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 0;
@@ -327,6 +326,11 @@ a.btn {
 
 .navigation__list {
   text-transform: uppercase;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: none;
 }
 
 .hamburger.active .line:nth-child(2) {
